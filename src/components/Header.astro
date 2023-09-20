@@ -1,4 +1,9 @@
+---
+const pages = ['about', '1', 'blog', 'blogindex', 'index', 'tester'];
+---
+
 <nav class="bg-blue-600 text-white p-4">
-    <a href="/" class="mr-4">Home</a>
-    <a href="/about">About</a>
+    {pages.map(page => (
+        <a href={`/${page}`} class="mr-4">{page.charAt(0).toUpperCase() + page.slice(1)}</a>
+    ))}
 </nav>
