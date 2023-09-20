@@ -1,0 +1,22 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html>
+    <head>
+        <title>My Website</title>
+        <style lang="css" global>
+            @import '../styles/tailwind.css';
+        </style>
+    </head>
+<body>
+    <Header />
+    
+    <main>
+        <slot></slot> <!-- This is a placeholder for where the content of individual pages will go -->
+    </main>
+    
+    <Footer />
+</body>
+</html>
